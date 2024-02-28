@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const StatisticLine = ({ text, value }) => {
-  isNaN(value) && (value = 0);
   return (
     <tr>
       <td>{text}</td>
@@ -11,6 +10,10 @@ const StatisticLine = ({ text, value }) => {
 };
 
 const Statistics = ({ feedbacks }) => {
+  if (feedbacks.all === 0) {
+    return <h3>No feedback given</h3>;
+  }
+
   return (
     <div>
       <h2>Statistics</h2>
