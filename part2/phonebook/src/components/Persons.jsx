@@ -1,6 +1,6 @@
 const Persons = ({ persons, onRemove }) => {
   return (
-    <menu>
+    <menu className="persons">
       {persons.map((person) => (
         <li key={person.id}>
           {person.name} {person.number}{" "}
