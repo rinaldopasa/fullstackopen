@@ -1,0 +1,39 @@
+body {
+  margin-inline: 5rem;
+}
+
+.form > label {
+  display: block;
+  padding-top: 3px;
+}
+
+li {
+  list-style: none;
+
+  &:not(:first-child) {
+    padding-top: 7px;
+  }
+}
+
+.persons {
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 10px 30px;
+  box-shadow: 0 3px 0 0 black;
+}
+
+.notification {
+  background-color: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
